@@ -1,17 +1,17 @@
 <?php
 
 /*
- * This file is part of the Dektrium project.
+ * This file is part of the fighcell project.
  *
- * (c) Dektrium project <http://github.com/dektrium/>
+ * (c) fighcell project <http://github.com/fighcell/>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\events;
+namespace fighcell\user\events;
 
-use dektrium\user\models\Account;
+use fighcell\user\models\Account;
 use yii\authclient\ClientInterface;
 use yii\base\Event;
 

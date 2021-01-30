@@ -5,15 +5,15 @@ return [
     'basePath' => dirname(__DIR__),
     'language' => 'en-US',
     'aliases' => [
-        '@dektrium/user' => dirname(dirname(dirname(__DIR__))),
+        '@fighcell/user' => dirname(dirname(dirname(__DIR__))),
         '@tests' => dirname(dirname(__DIR__)),
         '@vendor' => VENDOR_DIR,
         '@bower' => VENDOR_DIR . '/bower-asset',
     ],
-    'bootstrap' => ['dektrium\user\Bootstrap'],
+    'bootstrap' => ['fighcell\user\Bootstrap'],
     'modules' => [
         'user' => [
-            'class' => 'dektrium\user\Module',
+            'class' => 'fighcell\user\Module',
             'admins' => ['user'],
         ],
     ],

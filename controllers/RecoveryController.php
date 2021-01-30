@@ -1,21 +1,21 @@
 <?php
 
 /*
- * This file is part of the Dektrium project.
+ * This file is part of the fighcell project.
  *
- * (c) Dektrium project <http://github.com/dektrium/>
+ * (c) fighcell project <http://github.com/fighcell/>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\controllers;
+namespace fighcell\user\controllers;
 
-use dektrium\user\Finder;
-use dektrium\user\models\RecoveryForm;
-use dektrium\user\models\Token;
-use dektrium\user\traits\AjaxValidationTrait;
-use dektrium\user\traits\EventTrait;
+use fighcell\user\Finder;
+use fighcell\user\models\RecoveryForm;
+use fighcell\user\models\Token;
+use fighcell\user\traits\AjaxValidationTrait;
+use fighcell\user\traits\EventTrait;
 use yii\filters\AccessControl;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -23,7 +23,7 @@ use yii\web\NotFoundHttpException;
 /**
  * RecoveryController manages password recovery process.
  *
- * @property \dektrium\user\Module $module
+ * @property \fighcell\user\Module $module
  *
  * @author Dmitry Erofeev <dmeroff@gmail.com>
  */
@@ -34,37 +34,37 @@ class RecoveryController extends Controller
 
     /**
      * Event is triggered before requesting password reset.
-     * Triggered with \dektrium\user\events\FormEvent.
+     * Triggered with \fighcell\user\events\FormEvent.
      */
     const EVENT_BEFORE_REQUEST = 'beforeRequest';
 
     /**
      * Event is triggered after requesting password reset.
-     * Triggered with \dektrium\user\events\FormEvent.
+     * Triggered with \fighcell\user\events\FormEvent.
      */
     const EVENT_AFTER_REQUEST = 'afterRequest';
 
     /**
      * Event is triggered before validating recovery token.
-     * Triggered with \dektrium\user\events\ResetPasswordEvent. May not have $form property set.
+     * Triggered with \fighcell\user\events\ResetPasswordEvent. May not have $form property set.
      */
     const EVENT_BEFORE_TOKEN_VALIDATE = 'beforeTokenValidate';
 
     /**
      * Event is triggered after validating recovery token.
-     * Triggered with \dektrium\user\events\ResetPasswordEvent. May not have $form property set.
+     * Triggered with \fighcell\user\events\ResetPasswordEvent. May not have $form property set.
      */
     const EVENT_AFTER_TOKEN_VALIDATE = 'afterTokenValidate';
 
     /**
      * Event is triggered before resetting password.
-     * Triggered with \dektrium\user\events\ResetPasswordEvent.
+     * Triggered with \fighcell\user\events\ResetPasswordEvent.
      */
     const EVENT_BEFORE_RESET = 'beforeReset';
 
     /**
      * Event is triggered after resetting password.
-     * Triggered with \dektrium\user\events\ResetPasswordEvent.
+     * Triggered with \fighcell\user\events\ResetPasswordEvent.
      */
     const EVENT_AFTER_RESET = 'afterReset';
 

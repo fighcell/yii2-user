@@ -1,27 +1,27 @@
 <?php
 
 /*
- * This file is part of the Dektrium project.
+ * This file is part of the fighcell project.
  *
- * (c) Dektrium project <http://github.com/dektrium/>
+ * (c) fighcell project <http://github.com/fighcell/>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\traits;
+namespace fighcell\user\traits;
 
-use dektrium\user\events\AuthEvent;
-use dektrium\user\events\ConnectEvent;
-use dektrium\user\events\FormEvent;
-use dektrium\user\events\ProfileEvent;
-use dektrium\user\events\ResetPasswordEvent;
-use dektrium\user\events\UserEvent;
-use dektrium\user\models\Account;
-use dektrium\user\models\Profile;
-use dektrium\user\models\RecoveryForm;
-use dektrium\user\models\Token;
-use dektrium\user\models\User;
+use fighcell\user\events\AuthEvent;
+use fighcell\user\events\ConnectEvent;
+use fighcell\user\events\FormEvent;
+use fighcell\user\events\ProfileEvent;
+use fighcell\user\events\ResetPasswordEvent;
+use fighcell\user\events\UserEvent;
+use fighcell\user\models\Account;
+use fighcell\user\models\Profile;
+use fighcell\user\models\RecoveryForm;
+use fighcell\user\models\Token;
+use fighcell\user\models\User;
 use yii\authclient\ClientInterface;
 use yii\base\Model;
 

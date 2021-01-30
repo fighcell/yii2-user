@@ -1,23 +1,23 @@
 <?php
 
 /*
- * This file is part of the Dektrium project.
+ * This file is part of the fighcell project.
  *
- * (c) Dektrium project <http://github.com/dektrium/>
+ * (c) fighcell project <http://github.com/fighcell/>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\controllers;
+namespace fighcell\user\controllers;
 
-use dektrium\user\Finder;
-use dektrium\user\models\Account;
-use dektrium\user\models\LoginForm;
-use dektrium\user\models\User;
-use dektrium\user\Module;
-use dektrium\user\traits\AjaxValidationTrait;
-use dektrium\user\traits\EventTrait;
+use fighcell\user\Finder;
+use fighcell\user\models\Account;
+use fighcell\user\models\LoginForm;
+use fighcell\user\models\User;
+use fighcell\user\Module;
+use fighcell\user\traits\AjaxValidationTrait;
+use fighcell\user\traits\EventTrait;
 use yii\authclient\AuthAction;
 use yii\authclient\ClientInterface;
 use yii\filters\AccessControl;
@@ -40,49 +40,49 @@ class SecurityController extends Controller
 
     /**
      * Event is triggered before logging user in.
-     * Triggered with \dektrium\user\events\FormEvent.
+     * Triggered with \fighcell\user\events\FormEvent.
      */
     const EVENT_BEFORE_LOGIN = 'beforeLogin';
 
     /**
      * Event is triggered after logging user in.
-     * Triggered with \dektrium\user\events\FormEvent.
+     * Triggered with \fighcell\user\events\FormEvent.
      */
     const EVENT_AFTER_LOGIN = 'afterLogin';
 
     /**
      * Event is triggered before logging user out.
-     * Triggered with \dektrium\user\events\UserEvent.
+     * Triggered with \fighcell\user\events\UserEvent.
      */
     const EVENT_BEFORE_LOGOUT = 'beforeLogout';
 
     /**
      * Event is triggered after logging user out.
-     * Triggered with \dektrium\user\events\UserEvent.
+     * Triggered with \fighcell\user\events\UserEvent.
      */
     const EVENT_AFTER_LOGOUT = 'afterLogout';
 
     /**
      * Event is triggered before authenticating user via social network.
-     * Triggered with \dektrium\user\events\AuthEvent.
+     * Triggered with \fighcell\user\events\AuthEvent.
      */
     const EVENT_BEFORE_AUTHENTICATE = 'beforeAuthenticate';
 
     /**
      * Event is triggered after authenticating user via social network.
-     * Triggered with \dektrium\user\events\AuthEvent.
+     * Triggered with \fighcell\user\events\AuthEvent.
      */
     const EVENT_AFTER_AUTHENTICATE = 'afterAuthenticate';
 
     /**
      * Event is triggered before connecting social network account to user.
-     * Triggered with \dektrium\user\events\AuthEvent.
+     * Triggered with \fighcell\user\events\AuthEvent.
      */
     const EVENT_BEFORE_CONNECT = 'beforeConnect';
 
     /**
      * Event is triggered before connecting social network account to user.
-     * Triggered with \dektrium\user\events\AuthEvent.
+     * Triggered with \fighcell\user\events\AuthEvent.
      */
     const EVENT_AFTER_CONNECT = 'afterConnect';
 

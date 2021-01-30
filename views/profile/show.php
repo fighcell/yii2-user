@@ -1,9 +1,9 @@
 <?php
 
 /*
- * This file is part of the Dektrium project.
+ * This file is part of the fighcell project.
  *
- * (c) Dektrium project <http://github.com/dektrium>
+ * (c) fighcell project <http://github.com/fighcell>
  *
  * For the full copyright and license information, please view the LICENSE.md
  * file that was distributed with this source code.
@@ -13,7 +13,7 @@ use yii\helpers\Html;
 
 /**
  * @var \yii\web\View $this
- * @var \dektrium\user\models\Profile $profile
+ * @var \fighcell\user\models\Profile $profile
  */
 
 $this->title = empty($profile->name) ? Html::encode($profile->user->username) : Html::encode($profile->name);

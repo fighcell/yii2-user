@@ -1,14 +1,14 @@
 <?php
 
-namespace dektrium\user\traits;
+namespace fighcell\user\traits;
 
-use dektrium\user\Module;
+use fighcell\user\Module;
 
 /**
  * Trait ModuleTrait
  *
  * @property-read Module $module
- * @package dektrium\user\traits
+ * @package fighcell\user\traits
  */
 trait ModuleTrait
 {

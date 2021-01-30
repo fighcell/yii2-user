@@ -1,20 +1,20 @@
 <?php
 
 /*
- * This file is part of the Dektrium project.
+ * This file is part of the fighcell project.
  *
- * (c) Dektrium project <http://github.com/dektrium/>
+ * (c) fighcell project <http://github.com/fighcell/>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\models;
+namespace fighcell\user\models;
 
-use dektrium\user\helpers\Password;
-use dektrium\user\Mailer;
-use dektrium\user\Module;
-use dektrium\user\traits\ModuleTrait;
+use fighcell\user\helpers\Password;
+use fighcell\user\Mailer;
+use fighcell\user\Module;
+use fighcell\user\traits\ModuleTrait;
 use Yii;
 use yii\base\Model;
 

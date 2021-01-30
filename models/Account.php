@@ -1,20 +1,20 @@
 <?php
 
 /*
- * This file is part of the Dektrium project.
+ * This file is part of the fighcell project.
  *
- * (c) Dektrium project <http://github.com/dektrium/>
+ * (c) fighcell project <http://github.com/fighcell/>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user\models;
+namespace fighcell\user\models;
 
-use dektrium\user\clients\ClientInterface;
-use dektrium\user\Finder;
-use dektrium\user\models\query\AccountQuery;
-use dektrium\user\traits\ModuleTrait;
+use fighcell\user\clients\ClientInterface;
+use fighcell\user\Finder;
+use fighcell\user\models\query\AccountQuery;
+use fighcell\user\traits\ModuleTrait;
 use yii\authclient\ClientInterface as BaseClientInterface;
 use yii\db\ActiveRecord;
 use yii\helpers\Json;

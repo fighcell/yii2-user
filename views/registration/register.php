@@ -1,9 +1,9 @@
 <?php
 
 /*
- * This file is part of the Dektrium project.
+ * This file is part of the fighcell project.
  *
- * (c) Dektrium project <http://github.com/dektrium>
+ * (c) fighcell project <http://github.com/fighcell>
  *
  * For the full copyright and license information, please view the LICENSE.md
  * file that was distributed with this source code.
@@ -14,8 +14,8 @@ use yii\widgets\ActiveForm;
 
 /**
  * @var yii\web\View $this
- * @var dektrium\user\models\User $model
- * @var dektrium\user\Module $module
+ * @var fighcell\user\models\User $model
+ * @var fighcell\user\Module $module
  */
 
 $this->title = Yii::t('user', 'Sign up');

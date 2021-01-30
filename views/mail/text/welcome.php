@@ -1,16 +1,16 @@
 <?php
 
 /*
- * This file is part of the Dektrium project.
+ * This file is part of the fighcell project.
  *
- * (c) Dektrium project <http://github.com/dektrium>
+ * (c) fighcell project <http://github.com/fighcell>
  *
  * For the full copyright and license information, please view the LICENSE.md
  * file that was distributed with this source code.
  */
 
 /**
- * @var dektrium\user\models\User
+ * @var fighcell\user\models\User
  */
 ?>
 <?= Yii::t('user', 'Hello') ?>,

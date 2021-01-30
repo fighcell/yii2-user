@@ -1,9 +1,9 @@
 <?php
 
 /*
- * This file is part of the Dektrium project.
+ * This file is part of the fighcell project.
  *
- * (c) Dektrium project <http://github.com/dektrium>
+ * (c) fighcell project <http://github.com/fighcell>
  *
  * For the full copyright and license information, please view the LICENSE.md
  * file that was distributed with this source code.
@@ -19,7 +19,7 @@ use yii\widgets\Pjax;
 /**
  * @var \yii\web\View $this
  * @var \yii\data\ActiveDataProvider $dataProvider
- * @var \dektrium\user\models\UserSearch $searchModel
+ * @var \fighcell\user\models\UserSearch $searchModel
  */
 
 $this->title = Yii::t('user', 'Manage users');

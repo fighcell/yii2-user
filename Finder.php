@@ -1,18 +1,18 @@
 <?php
 
 /*
- * This file is part of the Dektrium project.
+ * This file is part of the fighcell project.
  *
- * (c) Dektrium project <http://github.com/dektrium/>
+ * (c) fighcell project <http://github.com/fighcell/>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace dektrium\user;
+namespace fighcell\user;
 
-use dektrium\user\models\query\AccountQuery;
-use dektrium\user\models\Token;
+use fighcell\user\models\query\AccountQuery;
+use fighcell\user\models\Token;
 use yii\authclient\ClientInterface;
 use yii\base\BaseObject;
 use yii\db\ActiveQuery;
